@@ -1,4 +1,4 @@
-JavaScript is a High Level Language.
+/* JavaScript is a High Level Language.
 JavaScript is a Light Weight Language.
 JavaScript is a Interpreted Programming Language.
 OOP's (Object Oriented Programming) is also supported by the JavaScript.
@@ -19,3 +19,28 @@ We Can write JavaScript Code:
         by using <script> JS Code Goes here </script>
     ii. External JavaScript
         -> we have to make a seperate file with ".js" extension and we will write our code. Also, we have to link our js file with html file.
+        */
+        // JavaScript variables are containers for storing the data values.
+        // Creating a variable in JavaScript is called "delcaring" a variable.
+        //     e.g., 
+        //         var a = 10;
+        //         let accountId = 12892;
+        //         const PI = 3.14;
+        // All JavaScript variables must be identified with unique names, these 
+        // unique names are called identifiers.
+        
+        // -> Prefer not to use var, because of issue in block scope and functional scope
+
+
+const accountId = 122032;
+let accountEmail = "helloworld@gmail.com";
+var accountPassword = "12345";
+accountCity = "Mansehra";
+let accountState;
+
+// accountId = 23;
+
+console.log(accountId);
+
+//Console Table Method
+console.table([accountId, accountEmail, accountPassword, accountCity, accountState])
