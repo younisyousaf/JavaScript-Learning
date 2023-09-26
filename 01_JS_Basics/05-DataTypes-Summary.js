@@ -38,3 +38,30 @@ console.table(myObj)
 console.table(muslimsHeros)
 
 //For More Details Visit: https://262.ecma-international.org/5.1/#sec-11.4.3
+
+//**************    STACK and HEAP (Memory) **************//
+// STACK is Used along the Primitive Data Types (Number, String, boolean, null, undefined, Symbol, BigInt)
+// HEAP is Used along the Non-primitive Data Types (Array, Object, Function)
+
+
+//STACK
+let Name = "Younis";
+let myNewName = Name;
+myNewName = "Younis Yousaf";
+
+//Here the value will be different because in STACK a copy of data is assigned, so the output will be different because "myNewName" is updated.
+console.log(Name);
+console.log(myNewName);
+
+//HEAP
+let userOne = {
+    email: "user123@gmail.com",
+    userId : "56895.IT"
+}
+
+let userTwo = userOne;
+userTwo.email = "user456@gmail.com";
+
+//Here the output will be the same "user456@gmail.com" because we are targeting the same object (Reference of the object one) so it will change the email of "userOne" also.
+console.log(userOne.email)
+console.log(userTwo.email)
