@@ -40,6 +40,9 @@ console.log(url.replace('%20' ,'-')); //It will replace the word/letter we want 
 //To check whether url includes a specific word we want to check we use includes()
 console.log(url.includes('website')); //This function will return the boolean value (true)/(false)
 
+let newStr = "Younis-Portfolio-com" //we want the output in an array, let's do it
+console.log(newStr.split('-')) //Here in this method (split) it will split the string into an array, on the basis of value we provided, it can be anything e.g., word, character, space etc.
+//Output will be liek this: [ 'Younis', 'Portfolio', 'com' ]
 //Note: For More understanding and want to have full command on string methods
 //Read MDN Documentation for strings, It will take around 15 to 25 minutes.
 //Visit Here: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
