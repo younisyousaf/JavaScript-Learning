@@ -51,16 +51,19 @@ const mynewArr2 = myArr.splice(1,3);
 // A [ 1, 3, 5, 7, 9 ]
 
 
-//Here we have the output for three Arrays
-//A: This is the original array
+/*Here we have the output for three Arrays
+A: This is the original array
 
-//[ 1, 3, 5, 7, 9 ]
-//B [ 3, 5 ]
-//This is the second array in which we use the slice method, the slice method will get a range as a parameter like here we have values of the parameters (1,3). This means that it will slice the array or it will return a sub-sectio/copy of the original array within the given range here it will start from index[1] and ends on the index[3], but there is one more important thing that it will not include the value of last index.
+[ 1, 3, 5, 7, 9 ]
+B [ 3, 5 ]
+This is the second array in which we use the slice method, the slice method will get a range as a parameter like here we have values of the parameters (1,3). This means that it will slice the array or it will return a sub-sectio/copy of the original array within the given range here it will start from index[1] and ends on the index[3], but there is one more important thing that it will not include the value of last index.*/
 
-//[ 1, 9 ]
-//C [ 3, 5, 7 ]
-//This is the third array in which we use the splice method, this method will also get a range of indexes as parameters,but in this method scenario will be different. This method will give output of sub-section of the original array but it will the remove elements from the original array and it push those values in the new array that we have created.
+/*
+[ 1, 9 ]
+C [ 3, 5, 7 ]
+This is the third array in which we use the splice method, 
+this method will also get a range of indexes as parameters,
+but in this method scenario will be different. This method will give output of sub-section of the original array but it will the remove elements from the original array and it push those values in the new array that we have created.*/
 
 //So this is the basic difference between the slice and splice method
 
@@ -88,18 +91,18 @@ const mulsimHeros2 = ["Hazrat Khalid-bin-Waleed(R.A)", "Hazrat Umar-bin-Abdul-Az
 ]
  
 */
-//As you can see the output, there is a little problem that, the second array that we 
-//have inserted in first array will added as a single element, so if you want to access 
-//the element from the second array, you will code like this:
+/*As you can see the output, there is a little problem that, the second array that we 
+have inserted in first array will added as a single element, so if you want to access 
+the element from the second array, you will code like this:*/
 
-// console.log(mulsimHeros[3][1]); //This is OK but this is not a good approach to merge the two arrays like this, so instead of using push() method we will a new method.
+console.log(mulsimHeros[3][1]); //This is OK but this is not a good approach to merge the two arrays like this, so instead of using push() method we will a new method.
 //concat method
-// const firstName = "Younis"
-// const lastName = "Yousaf"
-// const fullName = firstName.concat(lastName);
-// console.log(fullName);
+const firstName = "Younis"
+const lastName = "Yousaf"
+const fullName = firstName.concat(lastName);
+console.log(fullName);
 
-//You will be confused here by this method that we use concat method for strings in order to concatenate them, but here also it is used for Array Merging, it will give a new array which is the combination of two or more arrays
+/*You will be confused here by this method that we use concat method for strings in order to concatenate them, but here also it is used for Array Merging, it will give a new array which is the combination of two or more arrays.*/
 const allHeros = mulsimHeros.concat(mulsimHeros2);
 // console.log(allHeros);
 /*[
