@@ -149,3 +149,15 @@ console.log(Object.entries(newObj))//This will print all the keys with it's valu
  //First value in the sub-array will always be a key and the second value will be actual-value of that key.
  //To check that this object has this property or not
  console.log(Object.hasOwnProperty('isLoggedIn')); //False because this object doesn't have such property, so in this way you can check that object own's this property or not.
+
+//  Object's can have method inside them
+const person = {
+    firstname: "John",
+    lastname: "Doe",
+    age: 55,
+    location: "US",
+    fullname: function(){
+        return `My Name is ${this.firstname} ${this.lastname}`;
+    }
+}
+console.log(person.fullname())
