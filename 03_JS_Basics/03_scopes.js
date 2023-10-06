@@ -68,10 +68,7 @@ if(username === "younis yousaf"){
 //this will also not be executed because it's scope is ended
 // console.log(username)
 
-
-//Hoisting in JS (Example)
-
-//Let's declare two functions to understand the hosting
+//Let's declare two functions
 // function addOne(num){
 //     return num + 1
 // }
@@ -103,4 +100,4 @@ const addTwo = function (num){
 // ReferenceError: Cannot access 'addTwo' before initialization
 //As you can see the error that in this case we cannot invoke/call the function
 //before the initialization
-//I hope you understand the Hoisting in JS
+
